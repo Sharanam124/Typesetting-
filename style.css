@@ -1,0 +1,180 @@
+/* General setup; do not change the given CSS code. Add your own CSS code at the bottom! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&family=Lato:wght@700&display=swap');
+
+/* General Font Styling */
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 0.625rem; /* Site-wide font size */
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  word-spacing: 0.05em;
+}
+
+/* Headings Font Styling */
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+/* Center the Top-Level Heading */
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Section Headings */
+section h2, aside h2, nav ul li {
+  font-size: 1.8rem;
+}
+
+/* Section Paragraphs */
+section p {
+  font-size: 1rem;
+}
+
+/* Indent the First Paragraph after each Heading */
+section h2 + p {
+  text-indent: 1.25rem;
+}
+
+/* Link Styles */
+a {
+  color: #0056b3;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:visited {
+  color: #4b0082;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none; /* Remove underline on hover/focus */
+}
+
+a:active {
+  color: #ff6600;
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+}
+
+/* External Links Icon */
+/* External Links Icon */
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 12px; /* Adjust the size as needed */
+  height: 12px;
+  margin-left: 0.3em;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAB20lEQVRoge3a73WCMBSH4XcERmAER3CDukEzghvUDdoNmg3qBu0GukHZoGxAPwA9SrnhT5Kb6PF3Tr7o4XIfIQI5QJyUwCfQKI0T8AoUkTyUipjL8RYLBGASgE4xQalQ0aONUolRwqiBQA+lGhOo6WxAEB+VJHZmc8FABfAMfADfK4rWwEaobSJiRkEvwI9HwZSYK1ABvHsWS425At0D5g90uBNMA+2pdstz5h/ItdMzsGPdc0YKTANwdGDWJhWmAfk6s7tBTIPrixvEBAXlgAkG2mYACQo6KTT6pQUqFDC225fRAG2VMH2mUN6gUhEzB+UNAqgUMVOoIKC9MsaFCgKCcI/VczESKhgI/FESZurm2HTbn3EUXxs7o/GlmDlr1iXdY0xoECxHWaFOj1nUTwwQzEdZYftLTBYgmEZZYbshJhsQtBO2GtSuus/HMobJCtRnQ3ubJK0/9JFudGdHC6TWzwMUOQ9Q8AKB8wAFLxAwrsf52amEAmsXGn2yE3qplhSRloKjv5UxEumielxSxAhFetQTEV8K6mo/4V4KM0sL1o5iqUfNih/0kEHj0tgvxfSxGTQ/HHYtBtrDmhPKEmju7kk7p2o8TjMpBe0/y5E4i4jDUXX7MngelV86+65qUaf1tAAAAABJRU5ErkJggg==');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+
+/* List Styling */
+ul, ol {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1.5rem;
+}
+
+li {
+  line-height: 1.6;
+  list-style-type: square;
+}
+
+/* Navigation Menu Styling */
+/* Navigation Menu Button Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 0.8rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #a66;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #a66;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #fff;
+  color: #a66;
+  border-color: #a66;
+}
+
+nav ul li a:active {
+  background-color: #d66;
+  color: #fff;
+  border-color: #d66;
+}
+
+
+/* Footer Styling */
+footer {
+  font-size: 0.875rem;
+  text-align: center;
+}
